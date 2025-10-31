@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace utility
 {
@@ -21,5 +23,24 @@ namespace utility
         {
 
         }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            Program.time = (int)numericUpDown1.Value;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Program.ShutDownPc();
+
+            MessageBox.Show($"PC shutdown in {Program.time} seconds!");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //Process.Kill();
+        }
+
+        
     }
 }

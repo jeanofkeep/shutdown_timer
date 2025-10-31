@@ -2,29 +2,60 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace utility
 {
     internal static class Program
     {
-        /// <summary>
-        /// Главная точка входа для приложения.
-        /// </summary>
+        public static int time;
+
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
- 
+
+
+        }
+
+        public static void ShutDownPc()
+        {
 
             var process = new Process();
 
-            process.StartInfo.FileName = "file_name.exe";
+            time = time * 60;
+            process.StartInfo.FileName = "shutdown.exe";
+            process.StartInfo.Arguments = $"/s /t {time}";
             process.Start();
 
+            Console.WriteLine($"Выключаем через {time} минут");
+            //Thread.Sleep(30000);
+            //process.Kill();
+        }
+        public static void Undo()
+        {
+            try
+            {
+                var process = new Process();
+
+                process.StartInfo.FileName = "shutdown.exe";
+                process.StartInfo.Arguments = "/a";
+                process.StartInfo.UseShellExecute = false;
+                process.Start();
+
+                MessageBox.Show("Undo");
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error undo");
+            }
         }
     }
 }

@@ -55,7 +55,7 @@ namespace utility
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(13, 35);
+            this.numericUpDown1.Location = new System.Drawing.Point(13, 37);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(332, 20);
             this.numericUpDown1.TabIndex = 2;
@@ -66,9 +66,9 @@ namespace utility
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(29)))), ((int)(((byte)(67)))));
             this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(181, 78);
+            this.button2.Location = new System.Drawing.Point(181, 73);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(99, 45);
+            this.button2.Size = new System.Drawing.Size(99, 50);
             this.button2.TabIndex = 3;
             this.button2.Text = "undo";
             this.button2.UseVisualStyleBackColor = false;

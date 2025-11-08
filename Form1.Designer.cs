@@ -49,7 +49,7 @@ namespace utility
             this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(15, 81);
-            this.button1.Margin = new System.Windows.Forms.Padding(8);
+            this.button1.Margin = new System.Windows.Forms.Padding(9);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 50);
             this.button1.TabIndex = 2;
@@ -68,24 +68,23 @@ namespace utility
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(159, 81);
-            this.button2.Margin = new System.Windows.Forms.Padding(8);
+            this.button2.Location = new System.Drawing.Point(163, 81);
+            this.button2.Margin = new System.Windows.Forms.Padding(9);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(56, 50);
             this.button2.TabIndex = 4;
-            this.button2.Text = "undo";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(87, 81);
-            this.button3.Margin = new System.Windows.Forms.Padding(8);
+            this.button3.Location = new System.Drawing.Point(89, 81);
+            this.button3.Margin = new System.Windows.Forms.Padding(9);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(56, 50);
             this.button3.TabIndex = 3;
@@ -110,8 +109,8 @@ namespace utility
             this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
             this.button4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(303, 81);
-            this.button4.Margin = new System.Windows.Forms.Padding(8);
+            this.button4.Location = new System.Drawing.Point(311, 81);
+            this.button4.Margin = new System.Windows.Forms.Padding(9);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(56, 50);
             this.button4.TabIndex = 6;
@@ -120,15 +119,15 @@ namespace utility
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
             this.button5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(231, 81);
-            this.button5.Margin = new System.Windows.Forms.Padding(8);
+            this.button5.Location = new System.Drawing.Point(237, 81);
+            this.button5.Margin = new System.Windows.Forms.Padding(9);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(56, 50);
             this.button5.TabIndex = 5;
-            this.button5.Text = "info";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -143,7 +142,7 @@ namespace utility
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(41)))), ((int)(((byte)(81)))));
-            this.ClientSize = new System.Drawing.Size(390, 158);
+            this.ClientSize = new System.Drawing.Size(381, 147);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label1);
@@ -152,6 +151,7 @@ namespace utility
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "SHUTTY UTILITY v1.0 by vadii";
             this.Load += new System.EventHandler(this.Form1_Load);

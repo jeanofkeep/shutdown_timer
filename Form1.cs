@@ -35,14 +35,7 @@ namespace utility
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int radius = 20; // радиус скругления углов
-            var path = new GraphicsPath();
-            path.AddArc(0, 0, radius, radius, 180, 90);
-            path.AddArc(button2.Width - radius, 0, radius, radius, 270, 90);
-            path.AddArc(button2.Width - radius, button2.Height - radius, radius, radius, 0, 90);
-            path.AddArc(0, button2.Height - radius, radius, radius, 90, 90);
-            path.CloseAllFigures();
-            button2.Region = new Region(path);
+           
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -51,6 +44,9 @@ namespace utility
             MessageBox.Show($"PC restart in {Program.time} min!");
         }
 
-        
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

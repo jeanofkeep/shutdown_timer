@@ -57,5 +57,11 @@ namespace utility
             Form2 info = new Form2();
             info.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Program.Undo();
+            MessageBox.Show($"Undo operation!");
+        }
     }
 }

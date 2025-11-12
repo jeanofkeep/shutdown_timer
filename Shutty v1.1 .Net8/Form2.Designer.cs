@@ -28,82 +28,88 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            label1 = new Label();
+            label2 = new Label();
+            button2 = new Button();
+            button1 = new Button();
+            toolTip1 = new ToolTip(components);
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(75, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(229, 19);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "About Shutty Utility";
+            label1.AutoSize = true;
+            label1.Font = new Font("Lucida Console", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label1.ForeColor = SystemColors.Control;
+            label1.Location = new Point(88, 10);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(229, 19);
+            label1.TabIndex = 0;
+            label1.Text = "About Shutty Utility";
             // 
             // label2
             // 
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(21, 29);
-            this.label2.Margin = new System.Windows.Forms.Padding(1);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(353, 206);
-            this.label2.TabIndex = 1;
-            this.label2.Text = resources.GetString("label2.Text");
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            label2.FlatStyle = FlatStyle.Flat;
+            label2.Font = new Font("Lucida Console", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label2.ForeColor = SystemColors.Control;
+            label2.Location = new Point(24, 33);
+            label2.Margin = new Padding(1);
+            label2.Name = "label2";
+            label2.Size = new Size(412, 238);
+            label2.TabIndex = 1;
+            label2.Text = resources.GetString("label2.Text");
+            label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(81)))), ((int)(((byte)(69)))));
-            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(245, 245);
-            this.button2.Margin = new System.Windows.Forms.Padding(9);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 48);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Donation♡ ︎";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.BackColor = Color.FromArgb(29, 81, 69);
+            button2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.ForeColor = SystemColors.Control;
+            button2.Location = new Point(286, 283);
+            button2.Margin = new Padding(10, 10, 10, 10);
+            button2.Name = "button2";
+            button2.Size = new Size(131, 55);
+            button2.TabIndex = 3;
+            button2.Text = "Donation♡ ︎";
+            toolTip1.SetToolTip(button2, "Donation");
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(81)))), ((int)(((byte)(69)))));
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(36, 245);
-            this.button1.Margin = new System.Windows.Forms.Padding(9);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 48);
-            this.button1.TabIndex = 2;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.BackColor = Color.FromArgb(29, 81, 69);
+            button1.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.Control;
+            button1.Image = shutty_utility.Properties.Resources.back_button;
+            button1.Location = new Point(42, 283);
+            button1.Margin = new Padding(10, 10, 10, 10);
+            button1.Name = "button1";
+            button1.Size = new Size(65, 55);
+            button1.TabIndex = 2;
+            toolTip1.SetToolTip(button1, "Back");
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(41)))), ((int)(((byte)(81)))));
-            this.ClientSize = new System.Drawing.Size(384, 311);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form2";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SHUTTY UTILITY v1.0 by vadii";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            BackColor = Color.FromArgb(29, 41, 81);
+            ClientSize = new Size(448, 359);
+            Controls.Add(button2);
+            Controls.Add(label2);
+            Controls.Add(button1);
+            Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4, 3, 4, 3);
+            Name = "Form2";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "SHUTTY UTILITY v1.0 by vadii";
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
@@ -113,5 +119,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;
+        private ToolTip toolTip1;
     }
 }

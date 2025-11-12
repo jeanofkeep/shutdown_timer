@@ -80,28 +80,30 @@ namespace utility
             // button5
             // 
             button5.BackColor = Color.FromArgb(55, 55, 55);
-            button5.BackgroundImage = (Image)resources.GetObject("button5.BackgroundImage");
             button5.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button5.ForeColor = Color.White;
-            button5.Location = new Point(278, 93);
+            button5.Image = shutty_utility.Properties.Resources.info_button;
+            button5.Location = new Point(284, 93);
             button5.Margin = new Padding(10);
             button5.Name = "button5";
-            button5.Size = new Size(65, 58);
+            button5.Size = new Size(56, 50);
             button5.TabIndex = 5;
+            toolTip1.SetToolTip(button5, "Info");
             button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
             // 
             // button4
             // 
             button4.BackColor = Color.FromArgb(132, 55, 16);
-            button4.BackgroundImage = (Image)resources.GetObject("button4.BackgroundImage");
             button4.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.White;
-            button4.Location = new Point(364, 93);
+            button4.Image = shutty_utility.Properties.Resources.exit_button;
+            button4.Location = new Point(370, 93);
             button4.Margin = new Padding(10);
             button4.Name = "button4";
-            button4.Size = new Size(65, 58);
+            button4.Size = new Size(56, 50);
             button4.TabIndex = 6;
+            toolTip1.SetToolTip(button4, "Exit");
             button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
             // 
@@ -110,34 +112,37 @@ namespace utility
             button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
             button3.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(105, 93);
+            button3.Image = shutty_utility.Properties.Resources.restart_button;
+            button3.Location = new Point(111, 93);
             button3.Margin = new Padding(10);
             button3.Name = "button3";
-            button3.Size = new Size(65, 58);
+            button3.Size = new Size(56, 50);
             button3.TabIndex = 3;
+            toolTip1.SetToolTip(button3, "Restart");
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // button2
             // 
             button2.BackColor = Color.FromArgb(255, 179, 0);
-            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
             button2.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(191, 93);
+            button2.Image = shutty_utility.Properties.Resources.undo_button;
+            button2.Location = new Point(197, 93);
             button2.Margin = new Padding(10);
             button2.Name = "button2";
-            button2.Size = new Size(65, 58);
+            button2.Size = new Size(56, 50);
             button2.TabIndex = 4;
+            toolTip1.SetToolTip(button2, "Undo");
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // button1
             // 
-            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
             button1.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0, true);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(19, 93);
+            button1.Image = shutty_utility.Properties.Resources.shutdown_button;
+            button1.Location = new Point(25, 93);
             button1.Margin = new Padding(10);
             button1.Name = "button1";
             button1.Size = new Size(56, 50);

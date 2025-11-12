@@ -51,10 +51,10 @@ namespace utility
             // 
             this.numericUpDown1.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.numericUpDown1.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.numericUpDown1.Location = new System.Drawing.Point(15, 43);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(9);
+            this.numericUpDown1.Location = new System.Drawing.Point(13, 47);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(12, 11, 12, 11);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(353, 20);
+            this.numericUpDown1.Size = new System.Drawing.Size(362, 20);
             this.numericUpDown1.TabIndex = 1;
             this.numericUpDown1.Value = new decimal(new int[] {
             1,
@@ -68,13 +68,14 @@ namespace utility
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(-3, 6);
-            this.label1.Margin = new System.Windows.Forms.Padding(9);
+            this.label1.Location = new System.Drawing.Point(-4, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(12, 11, 12, 11);
             this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(5);
-            this.label1.Size = new System.Drawing.Size(283, 29);
+            this.label1.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.label1.Size = new System.Drawing.Size(287, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = " Enter the time(minutes)";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // fileSystemWatcher1
             // 
@@ -83,66 +84,78 @@ namespace utility
             // 
             // button5
             // 
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
             this.button5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(238, 81);
-            this.button5.Margin = new System.Windows.Forms.Padding(9);
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.Location = new System.Drawing.Point(240, 83);
+            this.button5.Margin = new System.Windows.Forms.Padding(10, 11, 12, 11);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(56, 50);
             this.button5.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.button5, "Info");
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(55)))), ((int)(((byte)(16)))));
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
             this.button4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(312, 81);
-            this.button4.Margin = new System.Windows.Forms.Padding(9);
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(318, 83);
+            this.button4.Margin = new System.Windows.Forms.Padding(10, 11, 15, 11);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(56, 50);
             this.button4.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.button4, "Exit");
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(90, 81);
-            this.button3.Margin = new System.Windows.Forms.Padding(9);
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(84, 83);
+            this.button3.Margin = new System.Windows.Forms.Padding(10, 11, 12, 11);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(56, 50);
             this.button3.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.button3, "Restart");
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(164, 81);
-            this.button2.Margin = new System.Windows.Forms.Padding(9);
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(162, 83);
+            this.button2.Margin = new System.Windows.Forms.Padding(10, 11, 12, 11);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(56, 50);
             this.button2.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.button2, "Undo operation");
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(16, 81);
-            this.button1.Margin = new System.Windows.Forms.Padding(9);
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(13, 83);
+            this.button1.Margin = new System.Windows.Forms.Padding(10, 5, 5, 5);
+            this.button1.MaximumSize = new System.Drawing.Size(56, 50);
+            this.button1.MinimumSize = new System.Drawing.Size(56, 50);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 50);
             this.button1.TabIndex = 2;
@@ -152,10 +165,11 @@ namespace utility
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(46, 289);
-            this.label2.Margin = new System.Windows.Forms.Padding(8);
+            this.label2.Location = new System.Drawing.Point(47, 282);
+            this.label2.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(287, 13);
             this.label2.TabIndex = 7;
@@ -164,21 +178,22 @@ namespace utility
             // 
             // listBox1
             // 
+            this.listBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(16)))), ((int)(((byte)(32)))));
             this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBox1.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(174)))), ((int)(((byte)(92)))));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(14, 145);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(5);
+            this.listBox1.Location = new System.Drawing.Point(13, 150);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(353, 130);
+            this.listBox1.Size = new System.Drawing.Size(360, 117);
             this.listBox1.TabIndex = 10;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(41)))), ((int)(((byte)(81)))));
             this.ClientSize = new System.Drawing.Size(384, 311);
@@ -193,6 +208,7 @@ namespace utility
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SHUTTY UTILITY v1.0 by vadii";

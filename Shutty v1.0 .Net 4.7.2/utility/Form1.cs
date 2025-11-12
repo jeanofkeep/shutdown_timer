@@ -78,5 +78,10 @@ namespace utility
 
             //MessageBox.Show($"Undo operation!");
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
